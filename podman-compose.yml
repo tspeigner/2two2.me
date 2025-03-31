@@ -4,7 +4,6 @@ services:
   nginx:
     image: cgr.dev/chainguard/nginx:latest
     container_name: web-nginx
-    user: "0:0"
     ports:
       - "443:443"
     volumes:
