@@ -1,0 +1,86 @@
+# --------------------------------
+# Node/NPM/Frontend (future-proofing)
+# --------------------------------
+node_modules/
+dist/
+build/
+.cache/
+.vite/
+*.log
+*.tmp
+*.bak
+
+# --------------------------------
+# Editor/IDE & System Files
+# --------------------------------
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.code-workspace
+
+# --------------------------------
+# Logs & temporary files
+# --------------------------------
+logs/
+*.log
+*.pid
+*.seed
+*.sqlite
+
+# --------------------------------
+# SSL & Let's Encrypt Certs
+# --------------------------------
+**/ssl/
+certs/
+*.crt
+*.pem
+*.key
+/etc/letsencrypt/
+!README.md
+
+# --------------------------------
+# Python (if scripts or automation used)
+# --------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+*.env
+.venv/
+.envrc
+
+# --------------------------------
+# Docker/Podman/Compose Artifacts
+# --------------------------------
+*.tar
+*.img
+*.qcow2
+*.bak
+*.lock
+*.sock
+
+# Podman Compose Volumes
+volumes/
+containers/
+*.podman-compose.yaml.bak
+
+# --------------------------------
+# Markdown / Docs Builds (future)
+# --------------------------------
+_site/
+*.md~
+
+
+# --------------------------------
+# Misc
+# --------------------------------
+*.zip
+*.gz
+*.tgz
+*.7z
+*.tar.gz
+*.bak
+*.old
