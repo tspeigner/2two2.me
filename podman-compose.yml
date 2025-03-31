@@ -10,5 +10,5 @@ services:
       - ./website:/usr/share/nginx/html:ro
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
       - /home/tommy/letsencrypt/2two2.me:/etc/letsencrypt/live/2two2.me-0001:ro,U
-      - ./logs:/var/log/nginx
+      - ./logs:/var/log/nginx:U
     restart: always
