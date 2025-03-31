@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  nginx:
+    image: cgr.dev/chainguard/nginx:latest
+    container_name: web-nginx
+    ports:
+      - "443:443"
+    volumes:
+      - ./website:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/ssl:/etc/nginx/ssl:ro
+      - ./logs:/var/log/nginx
+    restart: always
